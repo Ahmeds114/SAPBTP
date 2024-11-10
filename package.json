@@ -17,12 +17,17 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-interaction_items": "cds watch --open interaction_items/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
       "auth": "xsuaa",
       "db": "hana"
     }
-  }
+  },
+  "sapux": [
+    "app/interaction_items",
+    "app/interaction_items"
+  ]
 }
